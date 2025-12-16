@@ -120,7 +120,8 @@ public class WordTracker {
     }
 
     // Loads the tree from the saved file if it exists
-    private static BSTreeADT<TrackedWord> loadTree() {
+    @SuppressWarnings("unchecked")
+	private static BSTreeADT<TrackedWord> loadTree() {
         File file = new File(REPOSITORY_FILE);
 
         if (file.exists()) {
