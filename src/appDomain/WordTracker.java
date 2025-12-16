@@ -2,7 +2,9 @@ package appDomain;
 
 import java.io.*; import java.nio.file.*; import java.util.*;
 
-public class WordTracker { // Repository filename private static final String REPO = "repository.ser";
+public class WordTracker { 
+	// Repository filename 
+	private static final String REPO = "repository.ser";
 
 public static void main(String[] args) {
     if (args.length < 2) {
